@@ -4,8 +4,8 @@ export default class Character {
     this.getType(type);
     this.health = 100;
     this.level = 1;
-    this.attack = 0;
-    this.defence = 0;
+    this.attack = undefined;
+    this.defence = undefined;
   }
 
   getName(value) {
