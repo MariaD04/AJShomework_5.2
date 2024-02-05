@@ -4,7 +4,6 @@ import Magician from '../magician';
 import Undead from '../undead';
 import Swordsman from '../swordsman';
 import Zombie from '../zombie';
-import Character from '../character';
 
 describe.each([
   [Bowman, 'Bowman', 25, 25],
@@ -30,7 +29,7 @@ describe.each([
   });
 
   test('wrong type', () => {
-    const result = () => new Character('player', 'Character');
+    const result = () => new Class('player', 'Character');
     expect(result).toThrow('Wrong type');
   });
 
